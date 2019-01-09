@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "184795369125",
+    "firebase_url": "https://lezyproject.firebaseio.com",
+    "project_id": "lezyproject",
+    "storage_bucket": "lezyproject.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:184795369125:android:d951a36a1caa66ce",
+        "android_client_info": {
+          "package_name": "com.example.ijasahamed.lezyv2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "184795369125-04f442j6bku2h9nl759fdlqsgihsrrer.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ijasahamed.lezyv2",
+            "certificate_hash": "8fc939129ea37e29e810b7c5b057a1cf41dc637d"
+          }
+        },
+        {
+          "client_id": "184795369125-8sfoa6ur78479piab17jici8la1gdpnh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAq6oBsk6gR1maji2E4cAtp3unIyJWvD1o"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "184795369125-8sfoa6ur78479piab17jici8la1gdpnh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

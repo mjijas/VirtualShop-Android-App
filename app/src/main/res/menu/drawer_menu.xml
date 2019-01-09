@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_person"
+            android:title="Profile">
+
+        </item>
+
+        <item
+            android:id="@+id/nav_shop"
+            android:icon="@drawable/shop2"
+            android:title="Shops" />
+
+        <item
+            android:id="@+id/nav_shop_items"
+            android:icon="@drawable/nav_items"
+            android:title="Shop Items" />
+
+
+
+
+    </group>
+
+
+
+    <group
+        android:id="@+id/menu_shop"
+        android:checkableBehavior="none">
+
+        <item
+            android:id="@+id/nav_search"
+            android:icon="@drawable/search_icon_pic"
+            android:title="Quick Search" />
+
+
+        <item
+            android:id="@+id/nav_scanner"
+            android:icon="@drawable/ic_scanner"
+            android:title="Scanner" />
+
+
+        <!--<item android:id="@+id/nav_message"-->
+            <!--android:icon="@drawable/ic_message"-->
+            <!--android:title="Messages">-->
+        <!--</item>-->
+
+        <!--<item android:id="@+id/nav_notofications"-->
+            <!--android:icon="@drawable/ic_notifications"-->
+            <!--android:title="Notifications">-->
+        <!--</item>-->
+
+    </group>
+
+    <group
+        android:id="@+id/menu_help"
+        android:checkableBehavior="none">
+
+        <item
+            android:id="@+id/nav_shops"
+            android:icon="@drawable/ic_settings"
+            android:title="Settings" />
+
+            <item
+                android:id="@+id/nav_help"
+                android:icon="@drawable/ic_help"
+                android:title="Help" />
+
+            <!--<item-->
+                <!--android:id="@+id/nav_feedback"-->
+                <!--android:icon="@drawable/ic_feedback"-->
+                <!--android:title="FeedBack" />-->
+
+        <item
+            android:id="@+id/nav_sign_out"
+            android:icon="@drawable/ic_sign_out"
+            android:title="Logout" />
+
+    </group>
+
+
+</menu>

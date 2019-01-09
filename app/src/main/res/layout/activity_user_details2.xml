@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/theme_background"
+    android:orientation="vertical"
+    android:focusable="false"
+    android:focusableInTouchMode="true"
+    tools:context=".UserDetails2">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:text="User's Details"
+        android:textColor="#fff"
+        android:textSize="30dp"
+        android:textAllCaps="true"
+        android:textStyle="bold" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp">
+
+        <LinearLayout
+            android:id="@+id/loginLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="30dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/user_details_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:background="@drawable/description_background"
+                android:maxLines="10"
+                android:gravity="top|left"
+                android:inputType="textMultiLine"
+                android:padding="10dp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:src="@drawable/mylocationpic"
+                android:layout_marginTop="20dp"/>
+
+            <Button
+                android:id="@+id/get_location_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Set My Location"
+                android:background="#FFF" />
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/Finish_Button"
+        android:layout_width="120dp"
+        android:layout_height="35dp"
+        android:layout_gravity="right"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:background="#fff"
+        android:elevation="10dp"
+        android:text="Finish" />
+
+</LinearLayout>

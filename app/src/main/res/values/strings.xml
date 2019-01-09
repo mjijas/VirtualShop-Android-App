@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">Lezy V 2</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="google_maps_api_key">AIzaSyANVG1cEgeAPa2xm7qQkQfTpxwcXlZuGzQ</string>
+    <string name="navigation_drawer_open">Open Navigation Drawer</string>
+    <string name="navigation_drawer_close">Close Navigation Drawer</string>
+
+    <string-array name="productType">
+        <item>Goods</item>
+        <item>Services</item>
+    </string-array>
+
+    <string-array name="shopCategoryList">
+        <item>Select Your Shop Category</item>
+        <item>Hotels</item>
+        <item>Restaurants</item>
+        <item>Grocery</item>
+        <item>Electronics</item>
+    </string-array>
+
+    <string-array name="itemsCategoryList">
+        <item>Select Your Goods Category</item>
+        <item>Meals</item>
+        <item>Grocery</item>
+        <item>Vegitables</item>
+        <item>Fruits</item>
+        <item>Fast Foods</item>
+    </string-array>
+
+    <string-array name="serviceCategoryList">
+        <item>Select Your Service Category</item>
+        <item>Education</item>
+        <item>Medical</item>
+        <item>Vehicle Repair</item>
+        <item>Catering</item>
+        <item>Home Repairs</item>
+    </string-array>
+
+    <string-array name="ratting">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+
+    </string-array>
+
+
+</resources>

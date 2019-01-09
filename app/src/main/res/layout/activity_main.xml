@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:background="@drawable/theme_background">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:layout_margin="25dp"
+            android:background="#fff"
+            android:orientation="horizontal"
+            android:elevation="5dp"
+            android:padding="5dp">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:background="#fff"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:src="@drawable/ic_dehaze_black_24dp"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Search Here.."
+                android:textSize="20dp"
+                android:lines="1"
+                android:background="@android:color/transparent"
+                android:layout_gravity="center"
+                android:layout_weight="100"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cancel"
+                android:textAllCaps="false"
+                android:background="#fff"
+                android:layout_gravity="center"
+                android:layout_weight="0.1"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="9.5"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/theme_background"
+                android:scaleType="fitCenter"
+                android:src="@drawable/user_edit_pic"
+                android:id="@+id/user_Button"/>
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/theme_background"
+                android:scaleType="fitCenter"
+                android:src="@drawable/shop_icon_pic"
+                android:id="@+id/seller_Button"/>
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/theme_background"
+            android:drawableStart="@drawable/search_icon_pic"
+            android:padding="10dp"
+            android:text="Search"
+            android:textAllCaps="true"
+            android:textColor="#fff"
+            android:textSize="40sp"
+            android:id="@+id/search_Button"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="55dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/virtual_shop_logo_original"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/settingLayout"
+                android:layout_margin="10dp"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+
+                    android:background="@drawable/theme_background"
+                    android:drawableStart="@drawable/ic_settings_white_24dp"
+                    android:text="Settings"
+                    android:paddingLeft="10dp"
+                    android:drawablePadding="6dp"
+                    android:textStyle="bold"
+                    android:gravity="start|center_vertical"
+                    android:layout_marginRight="5dp"
+                    android:textColor="#FFF"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    android:background="@drawable/theme_background"
+                    android:drawableStart="@drawable/ic_remove_circle_outline_black_24dp"
+                    android:text="LogOut"
+                    android:paddingLeft="10dp"
+                    android:drawablePadding="6dp"
+                    android:textStyle="bold"
+                    android:layout_marginRight="5dp"
+                    android:gravity="start|center_vertical"
+                    android:id="@+id/login_button"
+                    android:textColor="#FFF"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/info_button"
+                    android:background="@drawable/theme_background"
+                    android:drawableStart="@drawable/ic_info_outline_black_24dp"
+                    android:text="Info"
+                    android:paddingLeft="10dp"
+                    android:drawablePadding="6dp"
+                    android:textStyle="bold"
+                    android:gravity="start|center_vertical"
+                    android:textColor="#FFF"/>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+    
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="vertical"-->
+        <!--android:layout_weight="9.5">-->
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="This is the main Activity"-->
+            <!--android:layout_centerInParent="true" />-->
+
+        <!--<Button-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Log out"-->
+            <!--android:textColor="#fff"-->
+            <!--android:background="@drawable/theme_background"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_marginBottom="30dp"-->
+            <!--android:id="@+id/logout_Button"/>-->
+        <!--<Button-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Test the User details"-->
+            <!--android:id="@+id/user_details"/>-->
+
+        <!--<Button-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Map"-->
+            <!--android:id="@+id/Map_button"/>-->
+
+        <!--<Button-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Shop"-->
+            <!--android:id="@+id/Shop_Button"/>-->
+
+    <!--</LinearLayout>-->
+    <!---->
+
+</LinearLayout>

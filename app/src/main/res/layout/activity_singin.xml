@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/theme_background"
+    tools:context=".singin">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="70dp"
+        android:layout_marginStart="30dp"
+        android:id="@+id/loginLayout"
+        android:layout_marginEnd="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textColor="#fff"
+            android:textSize="35dp"
+            android:layout_marginBottom="20dp"
+            android:textAllCaps="true"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:drawableLeft="@drawable/ic_phone_black_24dp"
+            android:drawablePadding="8dp"
+            android:padding="6dp"
+            android:hint="Phone Number"
+            android:maxLength="10"
+            android:id="@+id/phoneNo_edittext"
+            android:background="#ffff"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:drawableLeft="@drawable/ic_lock_open_black_24dp"
+            android:drawablePadding="8dp"
+            android:padding="6dp"
+            android:hint="Password"
+            android:background="#ffff"
+            android:id="@+id/password_edittext"
+            android:layout_marginTop="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Forget Password"
+                android:textColor="#fff"
+                android:layout_weight="3"
+                android:layout_gravity="bottom"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_marginTop="10dp"
+                android:text="Login"
+                android:background="#fff"
+                android:id="@+id/login_button"
+                android:layout_weight="1"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_above="@+id/goRegisterButton">
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@drawable/lezy_logo"-->
+            <!--android:elevation="10dp"-->
+            <!--android:padding="20dp"-->
+            <!--android:text="Lezy"-->
+            <!--android:textColor="#fff"-->
+            <!--android:textSize="40dp"-->
+            <!--android:textStyle="bold"-->
+            <!--android:layout_centerInParent="true"/>-->
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/virtual_shop_logo_original"
+            android:layout_centerInParent="true"
+            />
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:background="#fff"
+        android:text="GETING STARTED WITH LEZY"
+        android:textSize="14dp"
+        android:id="@+id/goRegisterButton"
+        android:layout_margin="30dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/theme_background"
+    android:focusable="false"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context=".EditItemDetails">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:text="Product's Details"
+        android:textAllCaps="true"
+        android:textColor="#fff"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#FFF" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="3dp"
+        android:padding="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/itemPicture_CirImageView"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:background="@drawable/round_button"
+                android:elevation="5dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/item_icon"
+                app:civ_border_color="#ffffff"
+                app:civ_border_width="2dp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/item_name_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:text="Item Name"
+                android:textColor="#FFF"
+                android:textSize="15sp" />
+
+            <EditText
+
+                android:id="@+id/item_name"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#ffff"
+                android:hint="Item Name"
+                android:inputType="text"
+                android:padding="6dp" />
+
+            <TextView
+                android:id="@+id/item_price_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="2dp"
+                android:text="Price"
+                android:textColor="#FFF"
+                android:textSize="15sp" />
+
+            <EditText
+
+                android:id="@+id/item_price"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#ffff"
+                android:hint="Price"
+                android:inputType="numberDecimal"
+                android:padding="6dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp">
+
+        <LinearLayout
+            android:id="@+id/loginLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="15dp"
+                android:paddingBottom="10dp">
+
+                <ImageButton
+                    android:id="@+id/item_type_imgbtn"
+                    android:layout_width="160dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentLeft="true"
+                    android:background="@null"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/goods_switch" />
+
+
+                <TextView
+                    android:id="@+id/availability_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="56dp"
+                    android:text="Available"
+                    android:textColor="#FFF"
+                    android:textSize="15sp" />
+
+
+                <ImageButton
+                    android:id="@+id/availability_imgbtn"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@null"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/available" />
+
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="Item Category"
+                android:textColor="#FFF"
+                android:textSize="15sp" />
+
+            <Spinner
+                android:id="@+id/item_category"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="#ffff"
+                android:paddingStart="6dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="Description"
+                android:textColor="#FFF"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/item_description_editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:gravity="top|left"
+                android:hint="Tell us Somthing About Your Product or Service"
+                android:inputType="textMultiLine"
+                android:lines="3"
+                android:maxLines="5"
+                android:minLines="4"
+                android:padding="2dp"
+                android:paddingStart="10dp"
+                android:scrollbars="vertical" />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp">
+
+        <Button
+            android:id="@+id/item_delete_button"
+            android:layout_width="120dp"
+            android:layout_height="35dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:layout_weight="1"
+            android:background="#fff"
+            android:elevation="10dp"
+            android:text="Delete" />
+
+        <Button
+            android:id="@+id/item_save_button"
+            android:layout_width="120dp"
+            android:layout_height="35dp"
+            android:layout_gravity="right"
+            android:layout_weight="1"
+            android:background="#fff"
+            android:elevation="10dp"
+            android:text="Save" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
